@@ -1,4 +1,4 @@
-# dApps
+# DApps
 
 Contains exercises about :
 -Web3
