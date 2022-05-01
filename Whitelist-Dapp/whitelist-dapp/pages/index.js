@@ -37,9 +37,9 @@ export default function Home() {
 
     // If user is not connected to the Rinkeby network, let them know and throw an error
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 4) {
-      window.alert("Change the network to Rinkeby");
-      throw new Error("Change network to Rinkeby");
+    if (chainId !== 80001) {
+      window.alert("Change the network to Mumbai");
+      throw new Error("Change network to Mumbai");
     }
 
     if (needSigner) {
@@ -53,16 +53,22 @@ export default function Home() {
    * addAddressToWhitelist: Adds the current connected address to the whitelist
    */
   const addAddressToWhitelist = async () => {
+
     try {
+      
       // We need a Signer here since this is a 'write' transaction.
       const signer = await getProviderOrSigner(true);
       // Create a new instance of the Contract with a Signer, which allows
       // update methods
+      console.log(abi);
       const whitelistContract = new Contract(
         WHITELIST_CONTRACT_ADDRESS,
         abi,
         signer
       );
+
+    
+      
       // call the addAddressToWhitelist from the contract
       const tx = await whitelistContract.addAddressToWhitelist();
       setLoading(true);
@@ -181,7 +187,7 @@ export default function Home() {
       // Assign the Web3Modal class to the reference object by setting it's `current` value
       // The `current` value is persisted throughout as long as this page is open
       web3ModalRef.current = new Web3Modal({
-        network: "rinkeby",
+        network: "mumbai",
         providerOptions: {},
         disableInjectedProvider: false,
       });
@@ -213,7 +219,7 @@ export default function Home() {
       </div>
 
       <footer className={styles.footer}>
-        Made with &#10084; by Crypto Devs
+        Made  &#10084; by Durmuş Gülbahar
       </footer>
     </div>
   );
