@@ -1,9 +1,10 @@
-Used:
-    Truffle
-    Next.js
-    Mumbai (Polygon Test Network)
-    Ganache
-    Metamask
+Used: 
+    -Truffle
+    -Next.js
+    -Mumbai (Polygon Test Network)
+    -Ganache (Truffle's local test blockchain)
+    -Solidity
+    
 
 Whitelist Dapp, users in Mumbai Test network can join the whitelist for NFT will be deploy in the future. Maximum number of users is 10. If anyone joined already, can't join again.
 
