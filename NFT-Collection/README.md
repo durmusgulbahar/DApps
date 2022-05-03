@@ -13,5 +13,5 @@ OpenSea test Address : https://testnets.opensea.io/collection/crypto-devs-mqkjnc
 Smart contract addresss: 0x124720002a09DC68db05fBd1Df72f00c0e6d9A63
 
 
-![alt text](https://github.com/durmusgulbahar/DApps/blob/main/NFT-Collection/ss.png)
+![alt text](https://github.com/durmusgulbahar/DApps/blob/main/NFT-Collection/nft-mint.png)
 
